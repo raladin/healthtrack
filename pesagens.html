@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <title>Healthtrack</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/myCss.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><span class="fa fa-heartbeat"></span>Healthtrack</a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav" id="toggler">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link " href="index.html">Home</a>
+              <a class="nav-item nav-link" href="atividades.html">Atividades</a>
+              <a class="nav-item nav-link" href="refeicoes.html">Refeições</a>
+              <a class="nav-item active nav-link" href="pesagens.html">Pesagens</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+      <div class="table-wrapper">
+          <table class="table">
+              <thead class="thead-light">
+                  <tr>
+                      <th>Data</th>
+                      <th>Peso(Kg)</th>
+                      <th>Ações</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>02/05/2020</td>
+                      <td>76</td>
+                      <td>
+                        <i class="fa fa-pencil" data-toggle="tooltip" title="Editar"></i>
+                        <i class="fa fa-trash-o" data-toggle="tooltip" title="Excluir"></i>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>17/05/2020</td>
+                      <td>74</td>
+                      <td>
+                        <i class="fa fa-pencil" data-toggle="tooltip" title="Editar"></i>
+                        <i class="fa fa-trash-o" data-toggle="tooltip" title="Excluir"></i>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>02/06/2020</td>
+                      <td>72</td>
+                      <td>
+                        <i class="fa fa-pencil" data-toggle="tooltip" title="Editar"></i>
+                        <i class="fa fa-trash-o" data-toggle="tooltip" title="Excluir"></i>
+                      </td>
+                  </tr>      
+              </tbody>
+          </table>
+          <div class="row">
+            <button type="button" class="btn btn-info"><i class="fa fa-plus"></i> Incluir</button>
+          </div>
+      </div>
+  </div> 
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "></script>
+    <script>
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+      });
+    </script>
+  </body>
+  </html>
